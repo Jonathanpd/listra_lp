@@ -40,6 +40,8 @@ Link deploy: http://produz.digital/listra_lp/
 - [x] Slider na seção de Benefícos. Somente quando tela for referente ao mobile.
 - [x] Texto secundário para o título. Aparece somente em dispositivos móveis.
 - [x] FAQ list (accordion) com conteúdo dinâmico. (100% editável pelo usuário e sem limite de itens)
+- [x] Custom POST Type para Testemunhos (apenas exemplo no wp admin)
+- [ ] Exemplos no Opções do tema (painel wp) e na dentro da página LP (em editar página).
 - [ ] Otimização geral (em andamento...)
 - [ ] CI / CD
 - [ ] Outros...

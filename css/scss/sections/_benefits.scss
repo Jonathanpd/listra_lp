@@ -1,0 +1,134 @@
+.benefits {
+    width: 100%;
+    background: $background-3;
+    @media screen and (min-width: 801px){
+        display: flex;
+        justify-content: center;
+    }
+
+    &__container {
+        @media screen and (min-width: 801px){
+            display: flex;
+            overflow-x: auto;
+        }
+    }
+
+    &__row {
+        width: 100%;
+        @media screen and (min-width: 801px){
+            margin: 45px 0;
+        }
+        @media screen and (min-width: 801px){
+            display: flex;
+            justify-content: center;
+        }
+
+        ul {
+            @media screen and (min-width: 801px){
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                padding: 0 30px;
+                overflow-x: auto;
+            }
+
+            li {
+                @media screen and (min-width: 801px){
+                    width: 100%;
+                    max-width: 250px;
+                    min-width: 250px;
+                    max-height: 180px;
+                    min-height: 180px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    border-radius: 8px;
+                    background: $background-1;
+                    box-shadow: 0px 4px 6px 0px #D3C7C733;
+                }
+            }   
+        }
+    }
+
+    &__item {
+        width: 100%;
+        max-width: 250px;
+        min-width: 250px;
+        max-height: 180px;
+        min-height: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 8px;
+        background: $background-1;
+        box-shadow: 0px 4px 6px 0px #D3C7C733;
+    }
+
+    &__icon {
+        width: 100%;
+        max-width: 50px;
+        max-height: 50px;
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 16px;
+
+        svg {
+            width: 100%;
+        }
+    }
+
+    &__txt {
+        p {
+            max-width: 120px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: 1.5rem; //24px
+            line-height: 109.2%;
+            font-weight: bold;
+            color: $purple-1;
+        }
+    }
+    
+}
+
+// Slider
+.benefits__list .carousel-cell {
+    @media screen and (max-width: 800px){
+        //background: #8C8;
+        //border-radius: 5px;
+        //width: 66%;
+        height: 200px;
+
+        margin-right: 30px;
+        margin-bottom: 55px;
+        margin-top: 25px;
+
+        counter-increment: carousel-cell;
+    }
+}
+
+// dots
+.benefits__list .flickity-page-dots {
+    bottom: 25px;
+}
+.benefits__list .flickity-page-dots .dot {
+    width: 16px;
+    height: 16px;
+    margin: 0 8px;
+    background: none;
+    opacity: 1;
+    border: 1px solid $purple;
+}
+.benefits__list .flickity-page-dots .dot.is-selected {
+    background: $purple;
+}
+
+// button next arrow
+.benefits__list .flickity-prev-next-button {
+    display: none;
+}

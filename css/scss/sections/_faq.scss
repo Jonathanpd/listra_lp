@@ -1,0 +1,117 @@
+.faq {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+    
+    @media screen and (min-width: 861px) {
+        padding: 45px 0 38px 0;
+    }
+
+    &__row {
+        width: 100%;
+        max-width: 996px;
+        display: flex;
+        flex-direction: column;
+        padding: 0 16px;
+    }
+
+    &__title {
+        font-size: 1.5rem; //24px
+        line-height: 109.2%;
+        font-weight: bold;
+        color: $black-txt;
+        margin-bottom: 25px;
+
+        @media screen and (min-width: 861px) {
+            font-size: 2rem; //32px
+            margin-bottom: 50px;
+        }
+    }
+
+    &__accord-list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        @media screen and (min-width: 861px) {
+            gap: 16px;
+        }
+    }
+
+    &__accord-btn {
+
+        button {
+            width: 100%;
+            min-height: 55px;
+            background: $background-3;
+            border: none;
+            border-radius: 8px;
+            text-align: start;
+            text-shadow: none;
+            padding: 20px 60px 20px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            filter: drop-shadow(0px 4px 4px rgba(199, 199, 199, 0.25));
+
+            //font style
+            font-size: 1rem; //16px
+            line-height: 100%;
+            font-weight: 600;
+            color: $black-txt;
+            @media screen and (min-width: 861px) {
+                font-size: 1.25rem; //20px
+            }
+        }
+    }
+
+    &__accord-panel {
+
+        p {
+            font-size: 0.875rem; //14px
+            line-height: 140%;
+            font-weight: 400;
+            color: $black-txt;
+
+            @media screen and (min-width: 861px) {
+                font-size: 1rem; //16px
+            }
+        }
+    }
+
+    &__icon-btn {
+        transition: 0.4s;
+        position: absolute;
+        right: 24px;
+
+        svg {
+            min-width: 23px;
+        }
+    }
+}
+
+
+// feat: accodion
+.faq__accord-btn {
+    cursor: pointer;
+    transition: 0.2s;
+}
+.active.faq__accord-btn button, .faq__accord-btn button:hover {
+    background: $background-7;
+}
+.active.faq__accord-btn + .faq__accord-panel {
+    padding: 16px;
+    opacity: 1;
+}
+.faq__accord-panel {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.active.faq__accord-btn button > .faq__icon-btn {
+    transform: rotate(180deg);
+}

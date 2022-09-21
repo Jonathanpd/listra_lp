@@ -1,0 +1,135 @@
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        display: flex;
+    }
+
+    &__row {
+        width: 100%;
+        max-width: 996px;
+        display: flex;
+        justify-content: space-between;
+        margin: 25px 0;
+        @media screen and (max-width: 760px){
+            flex-direction: column;
+        }
+        @media screen and (min-width: 761px){
+            margin: 90px 0;
+        }
+    }
+
+    &__column {
+        width: 100%;
+        max-width: 100%;
+        flex-direction: column;
+
+        &--one{
+            @media screen and (min-width: 761px){
+                max-width: 50%;
+            }
+        }
+        &--two {
+            display: none;
+            @media screen and (min-width: 761px){
+                max-width: 50%;
+                display: flex;
+            }
+        }
+    }
+
+    &__info-card {
+        border-radius: 24px;
+        padding: 15px 35px;
+        background: $secondary;
+        box-shadow: 0px 4px 6px 0px #D3C7C726;
+        @media screen and (min-width: 761px){
+            max-width: 486px;
+        }
+    }
+
+    &__ic-row {
+
+        &--one {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        &--two {
+            
+        }
+    }
+
+    &__ic-img {
+        margin-right: 20px;
+
+        img {
+
+        }
+    }
+
+    &__ic-txt {
+
+        &--title {
+            font-size: 1.5rem; //24px
+            line-height: 140%;
+            font-weight: bold;
+            color: $purple-2;
+        }
+        &--content {
+            font-size: 1rem; //16px
+            line-height: 140%;
+            font-weight: 600;
+            color: $black;
+        }
+    }
+
+    &__info-title {
+        margin-top: 25px;
+        @media screen and (min-width: 761px){
+            display: none;
+        }
+
+        h2 {
+            font-size: 1.5rem; //24px
+            line-height: 109.2%;
+            font-weight: bold;
+            color: $black-txt;
+        }
+    }
+
+    &__info-text {
+        margin-top: 25px;
+        @media screen and (min-width: 761px){
+            max-width: 486px;
+            margin-top: 40px;
+        }
+
+        p {
+            font-size: 1rem; //16px
+            line-height: 140%;
+            font-weight: 500;
+            color: $black-txt;
+            @media screen and (min-width: 761px){
+                font-size: 1.125rem; //18px
+                font-weight: 600;
+            }
+        }
+    }
+
+    // FORM
+    &__form-row {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__form-content {
+        width: 100%;
+        max-width: 346px;
+        background: $purple;
+        padding: 24px 0 0;
+        border-radius: 24px;
+    }
+}

@@ -1,0 +1,111 @@
+.scratchs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+    background: $background-2;
+    overflow: hidden;
+    
+    @media screen and (min-width: 861px) {
+        padding: 45px 0;
+    }
+
+    &__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__row {
+        display: flex;
+        width: 100%;
+        max-width: 996px;
+
+        &--two {
+            flex-direction: column;
+            margin: 25px 0;
+
+            @media screen and (min-width: 861px) {
+                margin: 45px 0;
+            }
+        }
+
+        &--three {
+            justify-content: center;
+        }
+    }
+
+    &__icon {
+        width: 100%;
+        min-width: 42px;
+        max-width: 42px;
+        margin-right: 20px;
+        @media screen and (min-width: 861px) {            
+            min-width: 78px;
+            max-width: 78px;
+            margin-right: 24px;
+        }
+    }
+
+    &__title {
+        font-size: 1.5rem; //24px
+        line-height: 109.2%;
+        font-weight: bold;
+        color: $purple;
+        @media screen and (min-width: 861px) {
+            font-size: 1.875rem; //30px
+            align-items: center;
+            display: flex;
+        }
+    }
+
+    &__list {
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        //list-style-type: disc;
+
+        li {
+            padding-left: 30px;
+            position: relative;
+
+            &:before {
+                content: "•";
+                font-size: 25px;
+                line-height: 0;
+                color: $black-txt;
+                position: absolute;
+                left: 10px;
+                top: 10px;
+            }
+
+            p {
+                font-size: 1rem; //16px
+                line-height: 140%;
+                font-weight: 500;
+                color: $black-txt;
+
+                @media screen and (min-width: 861px) {
+                    font-size: 1.125rem; //18px
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    &__txt {
+        font-size: 1rem; //16px
+        line-height: 140%;
+        font-weight: 500;
+        color: $black-txt;
+
+        @media screen and (min-width: 861px) {
+            font-size: 1.125rem; //18px
+            font-weight: 600;
+        }
+
+        span {
+            font-weight: bold;
+        }
+    }
+}

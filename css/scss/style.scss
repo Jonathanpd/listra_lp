@@ -1,0 +1,25 @@
+/*!
+Theme Name: listra
+Theme URI: http://localhost/listra_lp/
+Author: Jonathan Santos
+Author URI: https://listradigital.com.br/
+Description: Tema criado para a Listra
+Version: 1.0
+*/
+@import 'normalize';
+@import 'reset';
+@import 'fonts';
+@import 'general';
+
+
+// container_mw-1367
+@import 'container';
+
+// Slide
+@import 'slide';
+
+// Sections
+@import 'sections/sections';
+
+// Form
+@import 'form';

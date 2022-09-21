@@ -1,0 +1,100 @@
+/* ## Variables and Mixins ## */
+/* Colors */
+$primary: #7D28F7;
+$secondary: #ECBC4E;
+$purple: #32137B;
+$purple-1: #311D7D;
+$purple-2: #17016D;
+$black-txt: #444444;
+$white-txt: #FFF;
+$black: #000;
+$gray: #E5E5E5;
+/* Background Colors */
+$background-1: #FFFFFF;
+$background-2: #F9F9F9;
+$background-3: #F2F1F1;
+$background-4: #E0E7EC;
+$background-5: #B9DEC6;
+$background-6: #71C5B8;
+$background-7: rgba(224, 224, 236, 0.26);
+
+
+/* Estilos ADM Wordpress */
+
+.customize-support .header {
+	margin-top: 32px;
+}
+
+/* Estilos Gerais */
+body {
+	font-family: Montserrat, sans-serif;
+}
+
+p {
+	font-family: Montserrat, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+p, h1,h2,h3, li, a, button {
+	color: $black-txt;
+}
+
+// FORM
+::placeholder {
+	color: $black-txt;
+	opacity: 0.2;
+
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 600;
+}
+
+/*
+#form-erro span, #form-send span  {
+	font-size: 18px;
+	line-height: 25px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+#form-send {
+	color: #31aa39;
+}
+
+#form-erro {
+	color: #f64540;
+}
+
+.btn {
+	border: 3px solid #fec63e;
+	padding: 10px 30px;
+	color: #fec63e;
+	font-size: 14px;
+	line-height: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: .1em;
+	transition: all .5s ease;
+}
+
+.btn:hover {
+	color: #fff;
+	border-color: #fff;
+}
+
+.btn.btn-preto:hover {
+	color: #000;
+	border-color: #000;
+}
+*/

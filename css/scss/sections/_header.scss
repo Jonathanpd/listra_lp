@@ -1,0 +1,56 @@
+.header-lp {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+        &--logo{
+            min-height: 94px;
+            display: flex;            
+            align-items: center;
+            background: $primary;
+            @media screen and (max-width: 760px){
+                min-height: 56px;
+            }
+            a {
+                max-width: 155px;
+                @media screen and (max-width: 760px){
+                    max-width: 115px;
+                }
+            }
+        }
+        
+        &--title{
+            min-height: 172px;
+            display: flex;
+            align-items: flex-end;
+            background: $background-2;
+            background-image: url(./img/header/bg-header.png);
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            @media screen and (max-width: 760px){
+                align-items: center;
+            }
+        }
+    }
+
+    &__title-page {
+        margin-bottom: 42px;
+        font-size: 3.125rem; //50px
+        line-height: 126%;
+        font-weight: bold;
+        text-align: center;
+        color: $white-txt;
+        @media screen and (max-width: 760px){
+            font-size: 2rem; //32px
+            line-height: 118.9%;
+            margin-bottom: 0;
+        }
+    }
+}

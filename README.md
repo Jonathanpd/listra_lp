@@ -1,6 +1,6 @@
 
 <h1 align="center">
-    <img alt="Projeto_Jonthan" title="#Projeto_Jonthan" src="screeshot.png" />
+    <img alt="Projeto_Jonthan" title="#Projeto_Jonthan" src="./screenshot.png" />
 </h1>
 
 <h4 align="center"> 
@@ -52,13 +52,13 @@ O layout da aplicação:
 ### Web
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-    <img alt="Projeto_Jonthan" src="./img/Screeshot_1.png" width="400px">
+    <img alt="Projeto_Jonthan" src="./img/Screenshot_1.png" width="400px">
 </p>
 
 ### Mobile
 
 <p align="center">
-    <img alt="Projeto_Jonthan" title="#Projeto_Jonthan" src="./img/Screeshot_2.png" width="200px">
+    <img alt="Projeto_Jonthan" title="#Projeto_Jonthan" src="./img/Screenshot_2.png" width="200px">
 </p
 
 ---

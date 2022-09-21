@@ -41,6 +41,7 @@ Link deploy: http://produz.digital/listra_lp/
 - [x] Texto secundário para o título. Aparece somente em dispositivos móveis.
 - [x] FAQ list (accordion) com conteúdo dinâmico. (100% editável pelo usuário e sem limite de itens)
 - [ ] Otimização geral (em andamento...)
+- [ ] CI / CD
 - [ ] Outros...
 
 ---

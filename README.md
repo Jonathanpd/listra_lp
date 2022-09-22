@@ -68,13 +68,13 @@ O layout da aplicação:
 
 ## 🚀 Como executar o projeto
 
+### Instalar o tema em um wordpress local
+
 💡 No diretório do projeto, você pode executar:
 
 ### `npm install` 
 
 Depois:
-
-### Instalar o tema em um wordpress local
 
 ### `gulp`
 Para executar o gulp | modo de desenvolvimento.
